@@ -1,5 +1,5 @@
 # Backend
-PROJECT_ID=YOUR_PROJECT_ID
+PROJECT_ID=m3miniproject
 REGION=us-central1
 SERVICE=clicks-api
 gcloud config set project $PROJECT_ID
