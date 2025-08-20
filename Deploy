@@ -1,0 +1,17 @@
+# Backend
+PROJECT_ID=YOUR_PROJECT_ID
+REGION=us-central1
+SERVICE=clicks-api
+gcloud config set project $PROJECT_ID
+gcloud run deploy $SERVICE \
+--source ./backend \
+--region $REGION \
+--allow-unauthenticated
+
+
+
+# Frontend + Firestore rules
+cd frontend && npm run build && cd ..
+firebase use $PROJECT_ID
+firebase deploy --only firestore:rules
+firebase deploy --only hosting
