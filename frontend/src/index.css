@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #4f46e5;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #4338ca;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f6f7fb;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 12px 16px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.05s ease-in-out, background-color 0.2s;
+}
+button:hover {
+  border-color: #6366f1;
+  background-color: #4338ca;
+}
+button:active {
+  transform: translateY(1px);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button.secondary {
+  background: #64748b;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #111827;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  padding: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.big-count {
+  font-size: 56px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.card a {
+  color: #4f46e5;
+  cursor: pointer;
+}
+
+pre.code {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e5e7eb;
+    background-color: #0b1220;
+  }
+  body {
+    background: #0b1220;
+  }
+  .card {
+    background: #111827;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+  input {
+    background: #0f172a;
+    color: #e5e7eb;
+    border-color: #334155;
+  }
+  a:hover {
+    color: #818cf8;
+  }
+  button {
+    background-color: #4f46e5;
+  }
+  button.secondary {
+    background: #475569;
+  }
+}

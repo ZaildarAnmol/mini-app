@@ -1,0 +1,13 @@
+node_modules
+.env
+.env.*
+.firebase
+firestore-debug.log
+service-
+account.json
+frontend/node_modules
+frontend/dist
+backend/
+node_modules
+backend/.env
+
