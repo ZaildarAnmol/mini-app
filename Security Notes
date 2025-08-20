@@ -1,0 +1,5 @@
+Auth: Protected API checks Authorization: Bearer <Firebase ID token> with Admin SDK.
+Firestore rules: Users can only read/write their own document at users/{uid}.
+Least privilege: Cloud Run uses the default service account; Admin SDK uses Application Default
+Credentials on Cloud Run (no embedded keys).
+Secrets: .env and any service account keys are gitignored.
