@@ -1,5 +1,5 @@
 # Mini Click Counter (React + Firebase + Cloud Run)
-Live app: https://YOUR_PROJECT_ID.web.app
+Live app: https://m3miniproject.web.app
 API (via Hosting rewrite): https://clicks-api-167062448934.us-central1.run.app
 
 ## Stack
